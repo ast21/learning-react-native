@@ -1,0 +1,6 @@
+*
+!.gitignore
+!/auth
+!/albums
+!/tech_stacky
+!/manager
