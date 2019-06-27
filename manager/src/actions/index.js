@@ -1,6 +1,15 @@
-export const onChangeEmail = (email) =>  {
+import { EMAIL_CHANGED, PASSWORD_CHANGED } from './types';
+
+export const emailChanged = text => {
   return {
-    type: 'ON_CHANGE_EMAIL',
-    payload: email
+    type: EMAIL_CHANGED,
+    payload: text
+  };
+};
+
+export const passwordChanged = text => {
+  return {
+    type: PASSWORD_CHANGED,
+    payload: text
   };
 };

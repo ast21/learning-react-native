@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducers from './reducers';
+import { createStore } from 'redux';
 import firebase from 'firebase';
 import config from './config';
-import { Header } from './components/common';
+import reducers from './reducers';
 import LoginForm from './components/LoginForm';
+import { Header } from './components/common';
 
 class App extends Component {
   componentWillMount() {
