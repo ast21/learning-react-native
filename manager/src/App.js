@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import ReduxThunk from 'redux-thunk';
 import firebase from 'firebase';
 import config from './config';
 import reducers from './reducers';
@@ -14,8 +15,10 @@ class App extends Component {
 
   render() {
     console.log(config);
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+
     return (
-      <Provider store={createStore(reducers)}>
+      <Provider store={store}>
         <Header headerText="Manager" />
         <LoginForm />
       </Provider>
