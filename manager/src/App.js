@@ -5,7 +5,7 @@ import ReduxThunk from 'redux-thunk';
 import firebase from 'firebase';
 import config from './config';
 import reducers from './reducers';
-import LoginForm from './components/LoginForm';
+import Router from './Router';
 import { Header } from './components/common';
 
 class App extends Component {
@@ -19,8 +19,7 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <Header headerText="Manager" />
-        <LoginForm />
+        <Router />
       </Provider>
     );
   }
