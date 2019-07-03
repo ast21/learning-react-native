@@ -13,7 +13,7 @@ const RouterComponent = () => {
           <Scene key="login" component={LoginForm} title="Please login" />
         </Stack>
 
-        <Stack key="main">
+        <Stack key="main" initial >
           <Scene
             onRight={() => Actions.EmployeeCreate()}
             rightTitle="Create"
@@ -21,7 +21,7 @@ const RouterComponent = () => {
             component={EmployeeList}
             title="Employees"
           />
-          <Scene key="EmployeeCreate" component={EmployeeCreate} title="Create Employee" />
+          <Scene key="EmployeeCreate" component={EmployeeCreate} title="Create Employee" initial />
         </Stack>
 
       </Stack>
