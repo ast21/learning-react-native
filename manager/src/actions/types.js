@@ -7,3 +7,4 @@ export const LOGIN_USER_LOADING = 'login_user_loading';
 
 // employee
 export const EMPLOYEE_UPDATE = 'employee_update';
+export const EMPLOYEE_CREATE = 'employee_create';
