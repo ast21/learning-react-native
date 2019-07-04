@@ -1,0 +1,60 @@
+//  Демографические данные из гугл аналитик
+
+
+
+// account id 494
+// + stat
+{
+  "period 1 day": "100",
+  "period 7 day": "722",
+  "period 14 day": "1515",
+  "period 28 day": "3321",
+  "session_time_web": "00:01:02",
+  "session_time_app": "00:01:05",
+  "geo": {
+    "Russia": "50",
+    "USA": "3",
+    "Japan": "1",
+    "Kazakhstan": "80",
+    "Ukraine": "20",
+    "Nepal": "2"
+  },
+
+  "follower": "",
+  "visitors": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": ""
+}
+
+
+// event go 4021
+
+// to chto bylo dlya BM
+{
+  "session_time_web": "00:10:14",
+  "session_time_app": "00:11:14",
+  "session": "",
+  "session": "",
+  "session": "",
+  "session": "",
+  "session": ""
+}
+
+
+
+// super analytics id=494&event&3453
+
+{
+  "visitors_registered": "123",
+  "visitors_unregistered": "500",
+  "plans": "",
+  "broadcasts": "2",
+  "": "",
+  "": ""
+}

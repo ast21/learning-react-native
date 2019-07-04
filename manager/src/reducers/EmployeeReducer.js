@@ -1,17 +1,12 @@
-import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE } from "../actions/types";
+import { EMPLOYEE_FETCH_SUCCESS } from '../actions/types';
 
-const initialState = {
-  name: '',
-  phone: '',
-  shift: ''
-};
+const initialState = {};
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case EMPLOYEE_UPDATE:
-      return { ...state, [action.payload.key]: action.payload.value };
-    case EMPLOYEE_CREATE:
-      return { ...state, [action.payload.key]: action.payload.value };
+    case EMPLOYEE_FETCH_SUCCESS:
+      // console.log(action);
+      return action.payload;
     default:
       return state;
   }
