@@ -11,3 +11,4 @@ export const EMPLOYEE_CREATE = 'employee_create';
 
 // employee
 export const EMPLOYEE_FETCH_SUCCESS = 'employee_fetch_success';
+export const EMPLOYEE_SAVE_SUCCESS = 'employee_save_success';
