@@ -10,6 +10,8 @@ class EmployeeList extends Component {
     this.props.employeeFetch();
 
     this.createDataSource(this.props);
+
+    console.log('EmployeeList componentWillMount');
   }
 
   componentWillReceiveProps(nextProps) {
@@ -29,7 +31,7 @@ class EmployeeList extends Component {
   }
 
   render() {
-    console.log(this.props);
+    console.log('EmployeeList render', this.props);
 
     return (
       <ListView

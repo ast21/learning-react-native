@@ -20,7 +20,6 @@ class LoginForm extends Component {
   };
 
   renderError() {
-    console.log('renderError');
     return (
       <Text style={{ fontSize: 18, color: 'red', textAlign: 'center' }}>
         {this.props.error}
@@ -30,7 +29,6 @@ class LoginForm extends Component {
 
   renderButton() {
     const { user, loading } = this.props;
-    console.log('renderButton', loading);
     return loading ? <Spinner /> :
       <Button onPress={() => this.onButtonPress()}>
         {user ? "Welcome!" : "Log in"}

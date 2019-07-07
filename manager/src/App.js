@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(config);
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
     return (

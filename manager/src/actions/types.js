@@ -6,7 +6,7 @@ export const LOGIN_USER_FAIL = 'login_user_fail';
 export const LOGIN_USER_LOADING = 'login_user_loading';
 
 // employeeForm
-export const EMPLOYEE_UPDATE = 'employee_update';
+export const EMPLOYEE_INPUT_UPDATE = 'employee_input_update';
 export const EMPLOYEE_CREATE = 'employee_create';
 
 // employee
